@@ -1,0 +1,173 @@
+/** 右键下划线样式 */
+.vxe-body--column .el-dropdown {
+  width: 100%;
+}
+
+.vxe-toolbar {
+  background-color: transparent;
+  .vxe-custom--option-wrapper {
+    line-height: 20px;
+    .vxe-custom--footer button {
+      color: var(--system-primary-color);
+    }
+  }
+  .vxe-button.type--button.is--circle {
+    color: var(--system-primary-color);
+    background-color: var(--system-background-color2);
+    border-color: var(--system-border-color3);
+  }
+}
+.row--checked {
+  .vxe-body--column {
+    .vxe-cell {
+      .vxe-cell--label {
+        color: var(--system-font-color2);
+      }
+    }
+    background-color: transparent !important;
+  }
+}
+.vxe-grid {
+  .vxe-header--column {
+    background-color: var(--system-background-color1);
+    font-weight: 500;
+    height: 36px;
+    padding: 0;
+    color: var(--system-font-color1);
+    .vxe-cell--title {
+      font-size: 14px;
+    }
+  }
+  .row--stripe {
+    .vxe-body--column {
+      background-color: var(--system-background-color2);
+    }
+  }
+  .vxe-body--column {
+    height: 40px;
+    padding: 0;
+    color: var(--system-font-color2);
+    .vxe-cell--label {
+      font-size: 14px;
+    }
+  }
+  .vxe-table--render-wrapper {
+    .vxe-table--fixed-wrapper {
+      .vxe-table--fixed-right-wrapper {
+        height: 100% !important;
+      }
+    }
+  }
+  .vxe-body--row.row--checked {
+    background-color: var(--system-background-color6);
+  }
+}
+.vxe-pager--total,
+.vxe-pager--jump {
+  font-size: 14px;
+}
+.vxe-pager--num-btn {
+  font-size: 14px;
+  border: 1px solid var(--system-border-color3) !important;
+  &.is--active {
+    background-color: var(--system-primary-color);
+    color: var(--system-white-color) !important;
+    border: none;
+  }
+}
+.vxe-pager--jump-prev,
+.vxe-pager--jump-next,
+.vxe-pager--prev-btn,
+.vxe-pager--next-btn {
+  color: var(--system-font-color2);
+  &.is--disabled {
+    color: 1px solid var(--system-disabled-color);
+  }
+}
+
+.vxe-table--empty-content {
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .empty-container {
+    height: 100%;
+    img {
+      height: 90%;
+      max-height: 460px;
+    }
+  }
+}
+.vxe-table--empty-block {
+  height: 100%;
+}
+
+.vxe-table--render-default .vxe-cell--checkbox .vxe-checkbox--icon {
+  color: var(--system-border-color3);
+}
+
+.vxe-table--render-default .is--checked.vxe-cell--checkbox,
+.vxe-table--render-default
+  .is--indeterminate.vxe-cell--checkbox
+  .vxe-checkbox--icon {
+  color: var(--system-primary-color);
+}
+
+.vxe-table--render-default.border--default .vxe-table--header-wrapper,
+.vxe-table--render-default .vxe-table--body-wrapper {
+  background-color: var(--system-page-background-color);
+}
+
+.vxe-table--render-default.border--default .vxe-header--column,
+.vxe-table--render-default.border--default .vxe-body--column,
+.vxe-table--render-default.border--default
+  .vxe-table--header-wrapper
+  .vxe-header--row:last-child
+  .vxe-header--gutter {
+  background-image: linear-gradient(
+    var(--system-border-color2),
+    var(--system-border-color2)
+  );
+}
+
+.vxe-table .vxe-table--header-wrapper .vxe-table--header-border-line,
+.vxe-table--render-default .vxe-table--border-line {
+  border-color: var(--system-border-color2);
+}
+
+.vxe-header--column .vxe-resizable.is--line:before {
+  background-color: var(--system-border-color2);
+}
+.vxe-table--render-default .is--checked.vxe-cell--checkbox .vxe-checkbox--icon {
+  color: var(--system-primary-color);
+}
+
+.vxe-custom--option {
+  &:hover,
+  &.is--checked {
+    background-color: transparent !important;
+    .vxe-checkbox--icon,
+    .vxe-checkbox--label {
+      color: var(--system-primary-color) !important;
+      &:hover {
+        color: var(--system-primary-color);
+      }
+    }
+  }
+  .vxe-checkbox--icon,
+  .vxe-checkbox--label {
+    color: var(--system-font-color2);
+    &:hover {
+      color: var(--system-primary-color);
+    }
+  }
+}
+
+/*#region 各个主题下的特定样式*/
+@import "./theme/black/vxetable.scss";
+@import "./theme/dark/vxetable.scss";
+@import "./theme/blue/vxetable.scss";
+@import "./theme/white/vxetable.scss";
+/*#endregion*/

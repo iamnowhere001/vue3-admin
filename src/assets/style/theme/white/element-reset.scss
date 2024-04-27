@@ -1,0 +1,36 @@
+.white {
+  // card 组件
+  .el-card {
+    .el-card__header {
+      font-size: 14px;
+    }
+  }
+
+  .el-select-dropdown__item.selected {
+    color: var(--system-white-color);
+    &.hover {
+      background-color: var(--system-primary-color);
+    }
+  }
+
+  /*#region 菜单 */
+  .el-menu .el-menu-item.is-active {
+    color: var(--system-primary-color);
+  }
+  .el-menu.el-menu--horizontal .el-menu-item.is-active {
+    color: var(--system-primary-color) !important;
+  }
+  .el-menu.el-menu--horizontal .el-sub-menu.is-active .el-sub-menu__title {
+    color: var(--system-primary-color) !important;
+  }
+  .el-menu--popup .el-menu-item.is-active {
+    color: var(--system-black-color1) !important;
+  }
+  /*#endregion */
+
+  /*#region 标签 */
+  .tags-view-item.active a {
+    color: var(--system-black-color1) !important;
+  }
+  /*#endregion */
+}

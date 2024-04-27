@@ -1,0 +1,104 @@
+$directions: (
+  "t": "top",
+  "b": "bottom",
+  "l": "left",
+  "r": "right",
+);
+$dimensions: (
+  "p": "padding",
+  "m": "margin",
+);
+//获取padding margin间隔
+@each $dim in $dimensions {
+  //循环四个方向
+  @each $dir in $directions {
+    @for $i from 1 through 50 {
+      $size: $i * 1;
+      .#{nth($dim,1)}#{nth($dir,1)}-#{$size} {
+        #{nth($dim,2)}-#{nth($dir,2)}: #{$size}px;
+      }
+    }
+  }
+}
+
+//flex 居中
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 宽高
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// flex布局 默认居中
+@mixin flex($center1: center, $center2: center) {
+  display: flex;
+  justify-content: $center1; // flex-start | flex-end | center | space-between | space-around
+  align-items: $center2; // flex-start | flex-end | center | baseline | stretch
+}
+
+// position居中
+@mixin positionCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 文本超出隐藏 ...隐藏文本
+@mixin single-line($width: 100%) {
+  width: $width;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 文本最多(n)行，超出部分用...表示
+@mixin lines($num) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+}
+
+// 正三角形
+// $direction -> top | bottom | left | right
+@mixin triangle($width, $height, $color, $direction) {
+  $width: $width/2;
+  $border-style: $height solid $color;
+  $transparent-border: $width solid transparent;
+  height: 0;
+  width: 0;
+
+  @if $direction == top {
+    border-bottom: $border-style;
+    border-left: $transparent-border;
+    border-right: $transparent-border;
+  } @else if $direction == right {
+    border-left: $border-style;
+    border-top: $transparent-border;
+    border-bottom: $transparent-border;
+  } @else if $direction == bottom {
+    border-top: $border-style;
+    border-left: $transparent-border;
+    border-right: $transparent-border;
+  } @else if $direction == left {
+    border-right: $border-style;
+    border-top: $transparent-border;
+    border-bottom: $transparent-border;
+  }
+}
+
+@mixin fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

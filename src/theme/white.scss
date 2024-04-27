@@ -1,0 +1,80 @@
+/** 纯白主题 */
+
+.white {
+  // 主题色
+  --system-primary-color: #006bff;
+
+  //主题渐变色
+  --system-primary-gradient-color: #edf4ff;
+
+  //白色
+  --system-white-color: #ffffff;
+
+  //黑色
+  --system-black-color1: #ffffff;
+  --system-black-color2: #ffffff;
+
+  //背景色
+  --system-content-background-color: #eff3f9;
+  --system-page-background-color: #ffffff;
+  --system-background-color1: #f6f6f6;
+  --system-background-color2: #f3f8fe;
+  --system-background-color3: rgba(237, 244, 255, 0.5); //一级菜单激活背景
+  --system-background-color4: #fff; //input输入框背景
+  --system-background-color5: rgba(144, 147, 153, 0.5); //滚动条背景色
+  --system-background-color6: rgba(47, 76, 106, 0.1); //表格row选中
+  --system-background-color7: rgba(22, 120, 209, 0.32); //表格row选中
+
+  //边框色
+  --system-border-color1: #f6f6f6;
+  --system-border-color2: rgba(230, 230, 230, 1);
+  --system-border-color3: #d9d9d9;
+  --system-border-color4: #d3dcef;
+  --system-border-color5: #d9d9d9;
+  --system-border-color6: rgba(253, 249, 249, 0.3);
+
+  //字体颜色
+  --system-font-color1: #494f57;
+  --system-font-color2: #666e78;
+  --system-font-color3: #3e4448;
+  --system-font-color4: #bfbfbf;
+  --system-font-color5: #999999;
+  --system-font-color6: #666666;
+  --system-font-color7: #41444e;
+
+  //辅助色
+  --system-sub-color1: #0db6ff;
+  --system-sub-color2: #ff579f;
+  --system-sub-color5: #fcb323;
+  --system-sub-color3: #02c569;
+  --system-sub-color4: #f7363a;
+  --system-sub-color6: #b1b3b8;
+
+  //标签色
+  --system-tag-bg-color1: rgba(13, 182, 255, 0.22);
+  --system-tag-border-color1: rgba(13, 182, 255, 0.3);
+
+  --system-tag-bg-color2: rgba(255, 87, 159, 0.22);
+  --system-tag-border-color2: rgba(255, 87, 159, 0.3);
+
+  --system-tag-bg-color3: rgba(252, 179, 35, 0.22);
+  --system-tag-border-color3: rgba(252, 179, 35, 0.29);
+
+  --system-tag-bg-color4: rgba(21, 120, 210, 0.22);
+  --system-tag-border-color4: rgba(21, 120, 210, 0.3);
+
+  --system-tag-bg-color5: rgba(2, 197, 105, 0.22);
+  --system-tag-border-color5: rgba(2, 197, 105, 0.3);
+
+  --system-tag-bg-color6: rgba(242, 88, 88, 0.22);
+  --system-tag-border-color6: rgba(242, 88, 88, 0.3);
+
+  //不可用颜色
+  --system-disabled-color: #e0e0e0;
+
+  //阴影颜色
+  --system-shadow-color: rgba(102, 104, 108, 0.15);
+
+  // 透明颜色
+  --system-transparent-color: transparent;
+}

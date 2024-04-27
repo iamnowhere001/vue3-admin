@@ -1,0 +1,26 @@
+export default {
+  primaryColor: "#0FE0FF",
+  axisLineColor: "rgba(15,224,255,0.40)",
+  splitLineColor: "rgba(230,230,230,0.12)",
+  fontColor: "rgba(255,255,255,0.80)",
+  backgroundColor: "rgba(15,224,255,0.22)",
+  borderColor: "#0fe0ff",
+  transparentColor: "rgba(0,0,0,0)",
+  colors: [
+    "#0BB3D3",
+    "#0A94D4",
+    "#FFEA2F",
+    "#00CA78",
+    "#6FCA57",
+    "#BF9431",
+    "#FF579F",
+    "#F25858",
+  ],
+  visualColors: ["#7CE3F2", "#1AD0EB", "#00BFC2", "#06939C"],
+  mapColor: {
+    border: "#ffffff",
+    font: "rgba(255,255,255,0.80)",
+    area: "rgba(124,227,242,0.9)",
+    scatter: "#FFEA2F",
+  },
+};

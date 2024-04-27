@@ -1,0 +1,83 @@
+.dark {
+  /*#region 分页 */
+  .vxe-pager {
+    background-color: var(--system-page-background-color);
+    color: var(--system-font-color3);
+    .vxe-input--inner,
+    .vxe-pager--jump .vxe-pager--goto {
+      color: var(--system-font-color3);
+      border: 1px solid var(--system-border-color2);
+      background-color: var(--system-page-background-color);
+    }
+    .vxe-input--suffix {
+      color: var(--system-font-color3);
+    }
+    .vxe-pager--num-btn,
+    .vxe-pager--next-btn,
+    .vxe-pager--jump-prev,
+    .vxe-pager--jump-next,
+    .vxe-pager--prev-btn {
+      color: var(--system-font-color3);
+      background-color: var(--system-background-color2);
+      &.is--disabled {
+        opacity: 0.8;
+      }
+      &.is--active {
+        background-color: var(--system-primary-color);
+      }
+    }
+  }
+  /*#endregion*/
+
+  /*#region 下拉框样式 */
+  .vxe-select-option--wrapper {
+    background-color: var(--system-page-background-color) !important;
+    border-color: var(--system-border-color3) !important;
+    .vxe-select-option {
+      color: var(--system-font-color1);
+      &.is--selected {
+        background-color: var(--system-primary-color);
+      }
+    }
+  }
+  /*#endregion*/
+
+  /*#region 滚动条 */
+  .vxe-table--body-wrapper,
+  .vxe-custom--body {
+    &::-webkit-scrollbar {
+      display: none;
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.3);
+    }
+    &:hover {
+      &::-webkit-scrollbar {
+        display: block;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        &:hover {
+          background: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+  /*#endregion*/
+
+  .vxe-toolbar {
+    .vxe-custom--option-wrapper {
+      background-color: var(--system-background-color2);
+      border-color: var(--system-border-color3);
+      .vxe-custom--header,
+      .vxe-custom--body,
+      .vxe-custom--footer {
+        border-color: var(--system-border-color3);
+      }
+    }
+  }
+}

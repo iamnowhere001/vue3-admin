@@ -1,0 +1,75 @@
+@import "./reset.scss";
+@import "./transition.scss";
+@import "./common.scss";
+@import "@/theme/index.scss";
+
+/** 滚动条 */
+.system-scrollbar {
+  padding-right: 8px;
+  margin-right: -8px;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(144, 147, 153, 0.3);
+  }
+  &:hover {
+    &::-webkit-scrollbar {
+      display: block;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: rgba(144, 147, 153, 0.5);
+      &:hover {
+        background: rgba(144, 147, 153, 0.8);
+      }
+    }
+  }
+}
+
+.dark {
+  .system-scrollbar {
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.5);
+        &:hover {
+          background: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+}
+
+.blue {
+  .act-table {
+    background-color: transparent !important;
+  }
+  .system-scrollbar {
+    &::-webkit-scrollbar-thumb {
+      background: rgba(15, 224, 255, 0.3);
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background: rgba(15, 224, 255, 0.5);
+        &:hover {
+          background: rgba(15, 224, 255, 0.8);
+        }
+      }
+    }
+  }
+}
+
+/*#region 表格页面样式*/
+.table-container {
+  height: 100%;
+  .table-content {
+    height: calc(100% - 42px);
+  }
+}
+/*#endregion */

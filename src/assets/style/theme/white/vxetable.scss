@@ -1,0 +1,28 @@
+.white {
+  /*#region 滚动条 */
+  .vxe-table--body-wrapper,
+  .vxe-custom--body {
+    &::-webkit-scrollbar {
+      display: none;
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: rgba(144, 147, 153, 0.3);
+    }
+    &:hover {
+      &::-webkit-scrollbar {
+        display: block;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgba(144, 147, 153, 0.5);
+        &:hover {
+          background: rgba(144, 147, 153, 0.8);
+        }
+      }
+    }
+  }
+  /*#endregion*/
+}

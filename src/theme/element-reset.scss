@@ -1,0 +1,73 @@
+.common {
+  --el-color-primary: var(--system-primary-color) !important;
+  --el-color-danger: var(--system-sub-color4) !important;
+  --el-color-success: var(--system-sub-color3) !important;
+  --el-color-warning: var(--system-sub-color5) !important;
+  --el-fill-color: var(--system-disabled-color) !important;
+  --el-fill-color-blank: var(--system-background-color4) !important;
+  --el-border-color-extra-light: var(--system-border-color1) !important;
+  --el-text-color-regular: var(--system-font-color2) !important;
+  --el-text-color-placeholder: var(--system-font-color4) !important;
+  --el-border-color-lighter: var(--system-border-color2) !important;
+  --el-border-color-light: var(--system-border-color2) !important;
+  --el-border-color: var(--system-border-color2) !important;
+  --el-scrollbar-bg-color: var(--system-background-color5) !important;
+  --el-text-color-secondary: var(--system-font-color1) !important;
+  --el-bg-color: var(--system-page-background-color) !important;
+  --el-border-color-hover: var(--system-primary-color) !important;
+  --el-border: 1px solid var(--system-border-color3) !important;
+  --el-fill-color-lighter: var(--system-background-color6) !important;
+  --el-color-warning-light-9: var(--system-background-color6) !important;
+  --el-color-success-light-9: var(--system-background-color6) !important;
+  --el-table-tr-bg-color: var(--system-background-color6) !important;
+  --el-fill-color-dark: var(--system-disabled-color) !important;
+}
+
+.black {
+  @extend .common;
+  --el-color-info: var(--system-font-color1) !important;
+  --el-fill-color-light: var(--system-border-color1) !important;
+}
+
+.dark {
+  @extend .common;
+  --el-fill-color-light: var(--system-border-color1) !important;
+  --el-text-color-primary: var(--system-font-color1) !important;
+  --el-color-primary-light-9: var(--system-background-color7) !important;
+  --el-bg-color-overlay: var(--system-black-color1) !important;
+  --el-color-primary-light-8: var(--system-border-color6) !important;
+  --el-color-primary-light-7: var(--system-border-color4) !important;
+  --el-color-info-light-9: var(--system-tag-bg-color1) !important;
+  --el-color-info-light-5: var(--system-tag-border-color1) !important;
+  --el-color-info-light-8: var(--system-tag-border-color1) !important;
+  --el-color-primary-light-5: var(--system-tag-border-color1) !important;
+  --el-color-error-light-9: var(--system-tag-bg-color6) !important;
+  --el-color-success-light-9: var(--system-tag-bg-color5) !important;
+  --el-color-warning-light-9: var(--system-tag-bg-color3) !important;
+  --el-color-success-light-8: var(--system-tag-border-color5) !important;
+  --el-color-warning-light-8: var(--system-tag-border-color3) !important;
+}
+
+.blue {
+  @extend .common;
+  --el-text-color-primary: var(--system-font-color1) !important;
+  --el-bg-color-overlay: var(--system-black-color1) !important;
+  --el-color-primary-light-9: var(--system-background-color7) !important;
+  --el-color-primary-light-8: var(--system-border-color6) !important;
+  --el-color-primary-light-7: var(--system-primary-color) !important;
+  --el-color-info-light-9: var(--system-tag-bg-color1) !important;
+  --el-color-info-light-5: var(--system-tag-border-color1) !important;
+  --el-color-info-light-8: var(--system-tag-border-color1) !important;
+  --el-color-primary-light-5: var(--system-tag-border-color1) !important;
+  --el-color-error-light-9: var(--system-tag-bg-color6) !important;
+  --el-color-success-light-9: var(--system-tag-bg-color5) !important;
+  --el-color-warning-light-9: var(--system-tag-bg-color3) !important;
+  --el-color-success-light-8: var(--system-tag-border-color5) !important;
+  --el-color-warning-light-8: var(--system-tag-border-color3) !important;
+  --el-fill-color-light: var(--system-tag-bg-color1) !important;
+  --el-color-info: var(--system-primary-color);
+}
+
+.white {
+  @extend .common;
+}
